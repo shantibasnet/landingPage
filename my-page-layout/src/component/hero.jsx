@@ -1,3 +1,4 @@
+
 import "./hero.css";
 
 const Hero = ({ title, subtitle }) => {
@@ -11,5 +12,4 @@ const Hero = ({ title, subtitle }) => {
     </section>
   );
 };
-
 export default Hero;

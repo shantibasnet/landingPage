@@ -1,3 +1,4 @@
+
 import "./advertisement.css";
 
 const Advertisement = (props) => {
@@ -16,5 +17,6 @@ const Advertisement = (props) => {
     );
   } else <></>;
 };
+
 
 export default Advertisement;
