@@ -1,19 +1,15 @@
-import React from "react";
 
-function Hero(props) {
-  const heroStyle = {
-    backgroundColor: props.backgroundColor,
-    padding: "20px",
-    textAlign: "center",
-    color: "white",
-  };
+import "./hero.css";
 
+const Hero = ({ title, subtitle }) => {
   return (
-    <div style={heroStyle}>
-      <h1>{props.title}</h1>
-      <p>{props.subtitle}</p>
-    </div>
+    <section className="hero">
+      <h2>{title}</h2>
+      <img
+        src={"https://image.zmenu.com/menupic/3250/w_20210819034524834545.jpg"}
+        alt="Hero Image"
+      />
+    </section>
   );
-}
-
+};
 export default Hero;

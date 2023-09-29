@@ -1,0 +1,19 @@
+.advertisement {
+  position: absolute;
+  background-color: rgba(192, 223, 223, 0.473);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+}
+
+.advertisement .model {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  overflow: hidden;
+}

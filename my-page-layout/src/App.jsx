@@ -1,24 +1,28 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import Hero from "./Hero";
-import Advertisement from "./Advertisement";
+
+import React, { useEffect, useState } from "react";
+import Header from "./component/header";
+
+import Advertisement from "./component/advertisement";
+import "./App.css";
+import Hero from "./component/hero";
+
 
 function App() {
+  const [showAdvertisement, setshowAdvertisement] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setshowAdvertisement(true);
+    }, 1000);
+  }, []);
+
   return (
-    <div>
+
+    <div className="new_container">
       <Header />
-      <Hero
-        title="Welcome to our website"
-        subtitle="Discover amazing content"
-        backgroundColor="#f0f0f0"
-      />
-      <Hero
-        title="New arrivals"
-        subtitle="Check out our latest products"
-        backgroundColor="#ffcc00"
-      />
-      <Advertisement />
-      <Footer />
+      <Hero title="Every fast food in one place" />
+      <Advertisement show={showAdvertisement} setShow={setshowAdvertisement} />
+
     </div>
   );
 }
