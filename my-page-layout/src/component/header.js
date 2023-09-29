@@ -1,7 +1,4 @@
-
-
 function Header() {
-  return <div>header</div>;
+  return <header>{/* Header content */}</header>;
 }
-
 export default Header;

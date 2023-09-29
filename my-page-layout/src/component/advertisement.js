@@ -1,7 +1,5 @@
-
-
 function Advertisement() {
-  return <div>advertisement</div>;
+  return <advertise>{hi}</advertise>;
 }
 
 export default Advertisement;

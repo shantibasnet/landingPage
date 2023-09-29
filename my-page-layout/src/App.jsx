@@ -1,17 +1,25 @@
-import React from "react";
-import Header from "./component/header";
-import Hero from "./component/hero";
-import Advertisement from "./component/advertisement";
-import Footer from "./component/footer";
+import Header from "./Header";
+import Footer from "./Footer";
+import Hero from "./Hero";
+import Advertisement from "./Advertisement";
 
 function App() {
   return (
-    <>
+    <div>
       <Header />
-      <Hero />
+      <Hero
+        title="Welcome to our website"
+        subtitle="Discover amazing content"
+        backgroundColor="#f0f0f0"
+      />
+      <Hero
+        title="New arrivals"
+        subtitle="Check out our latest products"
+        backgroundColor="#ffcc00"
+      />
       <Advertisement />
       <Footer />
-    </>
+    </div>
   );
 }
 
